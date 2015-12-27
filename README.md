@@ -1,6 +1,29 @@
-#Overlay Bootstrap, simple extension for Bootstrap#
+#Programmatic Safe Bootstrap Overlays
+Forked from  karbonn//Overlay-Bootstrap - simple extension for Bootstrap
 
 Demo : http://karbonn.github.io/Overlay-Bootstrap/
+
+## What is the difference between this version the original?
+This version allows you to use frameworks or vanilla JS to enable overlays on bootstrap elements instead of relying on the ":hover" state of the original project.
+
+## Usage
+
+jQuery like
+```
+$("#jumbotron").addClass('overlayed');
+```
+
+Angular (enables overlay when scope.loading = true)
+```
+<div class="jumbotron" ng-class="overlayed: loading"></div>
+```
+
+## Develop
+* Edit `overlay-bootstrap.css`
+
+```
+gulp
+```
 
 ## What is Overlay Bootstrap? ##
 
